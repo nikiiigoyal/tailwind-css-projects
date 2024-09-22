@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <title>loginForm</title>
 </head>
 <body>
+    <div class="w-1/2 mx-auto">
+    <h2 class = "text-center text-[27px] mt-2">Login Form</h2>
+
+    <form action="/action_page.php" method="post">
+      <div class="mt-6 mb-3 text-center">
+        <img src="images/avatar.png" alt="Avatar" class="w-2/5 rounded-full mx-auto ">
+      </div>
+    <!-- width 40% border-radius 50% -->
+      <div class="p=4">  
+        <!-- padding 16px  -->
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required class="w-full px-5 py-3 my-2 inline-block border border-gray-300 box-border"> 
+        <!-- width 100%,padding - 12px top-bottom,20pxleft-right ,bordr 1px solid gray -->
     
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required 
+        class="w-full px-5 py-3 my-2 inline-block border border-gray-300 box-border">
+            
+        <button type="submit" class = "bg-[#04AA6D] text-white px-5 py-3.5 my-2 border-0 cursor-pointer w-full">Login</button>
+
+        <!-- background ,color,padding 12px 20px,marin top and bottom - 14px width fu;; -->
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+    
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class ="bg-[#f44336] w-auto px-4.5 py-2.5 sm:w-full">Cancel</button>
+        <span class="sm:block sm:float-none float-right pt-4">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+    </div>
 </body>
 </html>

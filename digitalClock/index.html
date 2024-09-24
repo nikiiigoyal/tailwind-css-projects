@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Heebo:300&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+    <title>Digital Clock</title>
+</head>
+<body>
+    <div>
+    <button class="toggle border-0 rounded-md text">Dark Mode</button>
+    <div class="clock-container flex flex-col justify-between items-center ">
+        <div class="clock relative w-[200px] h-[200px]">
+            <div class="hour absolute transition-all duration-500  top-1/2 left-1/2 w-[3px] h-[65px] origin-bottom -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="minute bg-primary transition-all duration-500 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[3px] h-[100px] origin-bottom"></div>
+            <div class="second bg-red-500 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[3px] h-[100px] origin-bottom"></div>
+            <div class="center-point bg-[#e74c3c] rounded-full w-[10px] h-[10px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+        <div class="time text-[60px]"></div>
+        <div class="date"></div>
+    </div>
+</div>
+</body>
+</html>

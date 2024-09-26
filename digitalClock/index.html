@@ -6,25 +6,23 @@
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Heebo:300&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-    <title>Digital Clock</title>
+ <title>Digital Clock</title>
+    
+      </script>
+      <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+   
     <div class="flex items-center justify-center min-h-screen font-[heebo] m-0 transition-all duration-500">
-    <button class="toggle bg-primary text-secondary rounded-md px-3 py-2 text-base absolute top-24 transition-all duration-500">Dark Mode</button>
+   
     <div class="clock-container flex flex-col justify-between items-center ">
         <div class="clock relative w-[200px] h-[200px]">
-            <!-- <div class="needle hour transform-origin-bottom absolute w-1/2 h-1 bg-black dark:bg-white top-1/2 left-1/2"></div>
-            - bg-primary`: Sets the background color to the primary color.
-          - `transition-all duration-500`: Applies a 0.5-second transition effect to all properties.
-          - `absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2`: Positions the element at the center of the clock container.
-          - `w-[3px] h-[65px]`: Sets the width and height of the hour hand.
-          - `origin-bottom`: Sets the transform origin to the bottom, which allows the hand to rotate from the bottom. -->
-            <!-- <div class="needle minute bg-primary transition-all duration-500 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[3px] h-[100px] origin-bottom"></div>
-            <div class="needle second bg-red-500 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[3px] h-[100px] origin-bottom"></div> --> 
-            <div class="needle hour transform-origin-bottom absolute w-1/2 h-1 bg-black dark:bg-white top-1/2 left-1/2"></div>
-<div class="needle minute transform-origin-bottom absolute w-1/2 h-1 bg-black dark:bg-white top-1/2 left-1/2"></div>
-<div class="needle second transform-origin-bottom absolute w-1/2 h-1 bg-red-500 dark:bg-red-400 top-1/2 left-1/2"></div>
+    <div class="needle hour bg-black transition-all duration-500 absolute left-1/2 top-1/2 origin-bottom w-[3px] h-[65px] -translate-x-1/2 -translate-y-full rotate-0"></div>
+    <div class="needle minute bg-black transition-all duration-500 absolute left-1/2 top-1/2 origin-bottom w-[3px] h-[100px] -translate-x-1/2 -translate-y-full rotate-0"></div>
+    <div class="needle second bg-red-500 transition-all duration-500 absolute left-1/2 top-1/2 origin-bottom w-[3px] h-[100px] -translate-x-1/2 -translate-y-full rotate-0"></div>
+
+
+<!-- <div class="needle second transform-origin-bottom absolute w-1/2 h-1 bg-red-500 dark:bg-red-400 top-1/2 left-1/2"></div> -->
 
             <div class="needle center-point bg-red-500 rounded-full w-[10px] h-[10px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"></div>
             

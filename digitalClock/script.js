@@ -31,14 +31,14 @@ function updateClock() {
 // Call the updateClock function every second
 setInterval(updateClock, 1000);
 
-// Toggle dark mode
-toggleBtn.addEventListener('click', (e) => {
-	const html = document.querySelector('html');
-	if(html.classList.contains('dark')){
-		html.classList.remove('dark');
-		e.target.innerHTML = 'Dark mode';
-	} else {
-		html.classList.add('dark');
-		e.target.innerHTML = 'Light mode';
-	}
-});
+// // Toggle dark mode
+// toggleBtn.addEventListener('click', (e) => {
+// 	const html = document.querySelector('html');
+// 	if(html.classList.contains('dark')){
+// 		html.classList.remove('dark');
+// 		e.target.innerHTML = 'Dark mode';
+// 	} else {
+// 		html.classList.add('dark');
+// 		e.target.innerHTML = 'Light mode';
+// 	}
+// });

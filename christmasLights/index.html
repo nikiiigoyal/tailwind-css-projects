@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Lights</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./dist/output.css">
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <style>
         .circle:before {
         position: absolute;
+
         content: '';
         height: 15px;
         width: 15px;
@@ -118,15 +121,17 @@
     </div>
     <div class="utilities flex flex-col justify-center items-center text-white absolute top-1/2 left-1/2 p-4 transform -translate-x-1/2 -translate-y-1/2">
         <div class="title text-center font-cinzel tracking-wide text-2xl">
-            <h1 id="title">Christmas Lights</h1>
+            <h1 id="title" class="mx-10">Christmas Lights</h1>
         </div>
     
     <div class="buttons">
         <button id="play" class="h-[50px] w-[50px] text-white outline-none border-2 border-[rgb(184,134,222)] rounded-full mx-3 bg-transparent hover:bg-[rgb(184,132,222)] active:bg-[rgb(184,134.222)] cuursor-pointer transition duration-500 ease-in-out">On</button>
         <button id="stop" class="h-[50px] w-[50px] text-white outline-none border-2 border-[rgb(184,134,222)] rounded-full mx-3 bg-transparent hover:bg-[rgb(184,132,222)] active:bg-[rgb(184,134.222)] cuursor-pointer transition duration-500 ease-in-out">Off</button>
-        <label for=""class="p-2.5">Speed:</label>
-        <input type="number" id="quantity" name="quantity" min="1" max="5"placeholder="From 1 to 5 only" value="" class="w-[140px] h-[40px] outline-none border-0 px-1.25 rounded-tl-[10px] rounded-bl-[10px]">
+        <!-- <label for=""class="p-2.5">Speed:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="5" placeholder="From 1 to 5 only" value="" class="w-[140px] h-[40px] outline-none border-0 px-1.25 rounded-tl-[10px] rounded-bl-[10px]"> -->
+        <!-- <input type="submit" id="submit" name="" value="RUN" onclick="convert()"class="h-[40px] rounded-tr-[10px] border-2 border-[rgb(184, 134, 222)] bg-none outline-none text-white bg-transparent hover:bg-[rgb(184,132,222)] active:bg-[rgb(184,134.222)] cuursor-pointer transition duration-500 ease-in-out"> -->
     </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

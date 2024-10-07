@@ -177,19 +177,19 @@
                         </rect>
                     </svg>
                     <!-- <div class=" gap-4 p-4 max-w-7xl mx-auto bg-gray-900"> -->
-                        <div class="button xl:col-span-5 bg-gray-800 rounded-lg p-4 text-white h-32">
+                        <div class="button xl:col-span-5 bg-[rgb(24,24,27)] rounded-lg p-4 text-white h-32">
                             <div class="flex justify-center space-x-2">
                                 <button class="bg-gray-600 hover:bg-gray-700 font-medium px-4 py-2 rounded transition duration-300">Button</button>
                                 <button class="bg-gary-900 hover:bg-gray-800 text-gray-200 font-medium px-4 py-2 rounded transition duration-300">Button</button>
                             </div>
                         </div>
-                        <div class="opendialog xl:col-span-5 bg-gray-800 rounded-lg p-4 text-white h-32">
+                        <div class="opendialog xl:col-span-5 bg-[rgb(24,24,27)] rounded-lg p-4 text-white h-32">
                             <div class="flex justify-center">
                         
                       <button class="hover:bg-gray-700 bg-gray-600 text-gray-200 font-medium px-4 py-2 rounded transition duration-300">open Dialoge</button>
                     </div>
                     </div>
-                        <div class="country bg-gray-800 rounded-lg p-4 text-white sm:col-span-2 xl:col-span-5 md:col-span-1">
+                        <div class="country bg-[rgb(24,24,27)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-5 md:col-span-1">
                             <h2 class="font-semibold mb-2">Country</h2>
                             <select class="bg-gray-700 px-3 py-1 rounded w-full">
                                 <option>Canada</option>
@@ -198,8 +198,33 @@
                             </select>
                             <p>We currently only ship to North America.</p>
                         </div>
-                        <div class="form bg-gray-800 rounded-lg p-4 text-white sm:col-span-2 xl:col-span-5 md:col-span-1">
-                            <h2>Sign in</h2>
+                        <div class="form bg-[rgb(24,24,27)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-5 md:col-span-1">
+                            
+                            <h2 class="text-2xl font-bold mb-6">Sign in</h2>
+                            <form>
+                                <div class="mb-4">
+                                    <label for="username" class="block mb-2">Username</label>
+                                    <input type="text" id="username" class="w-full bg-[rgb(36,36,39)]  px-3 py-2 rounded-lg placeholder:text-zinc-500 focus:outline-none text-white border border-zinc-950/10">
+                                </div>
+                                <div class="mb-4">
+                                    <label for="password" class="block mb-2">Password</label>
+                                    <input type="password" id="password" class="w-full bg-[rgb(36,36,39)]  px-3 py-2 rounded-lg placeholder:text-zinc-500 focus:outline-none text-white border border-zinc-950/10">
+                                </div>
+                                <div class="flex justify-between items-center mb-6">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2">
+                                        <span>Remember me</span>
+                                    </label>
+                                    <a href="#" class="text-white hover:underline">Forgot password?</a>
+                                </div>
+                        <button type="submit" class="hover:bg-gray-700 bg-gray-600 w-full text-gray-200  px-4 py-2 rounded transition duration-300 font-bold">Get started</button>
+
+                        
+                        
+                        </form>
+                        <p class="mt-4 text-center text-gray-400">
+                            Don't have an account? <a href="#" class="text-white font-bold hover:underline">Sign up</a>
+                        </p>
                         </div>
                         <div class="orders bg-gray-800 rounded-lg p-4 text-white  sm:col-span-2 xl:col-span-2"> 
                             <h2 class="font-semibold mb-2">Rececnt Orders</h2>

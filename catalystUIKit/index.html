@@ -51,7 +51,7 @@
                 </svg>
                 <main clas="pb-40 pt-2">
                     <div class="main-body relative grid gap-[17px] sm:grid-cols-2 xl:grid-cols-[repeat(15,_minmax(0,1fr))]">
-                        <!-- This setup creates a grid layout with a custom gap of 17px between items. On small screens, the grid will have 2 columns, but on extra-large screens, it will have 15 columns. The relative position allows further control over the element's positioning if needed. -->
+                        <!-- This setup creates a grid layout with a custom gap of 17px between items. On small screens, the grid will have 2 columns, but on extra-large screens, it will have 15 columns. The relative position allows further control over the element's positioning if needed.
                         <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[9px] left-0 right-0 row-start-2 ml-[calc(50%-50vw)] h-px w-screen" fill="none">
                             <defs>
                                 <pattern id=":S1:" patternUnits="userSpaceOnUse" width="16" height="1">
@@ -176,7 +176,7 @@
                     <rect width="100%" height="100%" fill="url(#:Sd:)">
 
                         </rect>
-                    </svg>
+                    </svg> -->
                     <!-- <div class=" gap-4 p-4 max-w-7xl mx-auto bg-gray-900"> -->
                         <div class="button xl:col-span-5 bg-[rgb(24,24,27)] rounded-lg p-4 text-white h-32 flex justify-center space-x-2 items-center">
                             <div >
@@ -190,18 +190,20 @@
                       <button class="hover:bg-gray-700 bg-gray-600 text-gray-200 font-medium px-4 py-2 rounded transition duration-300">open Dialoge</button>
                     </div>
                     </div>
-                        <div class="country bg-[rgb(24,24,27)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-5 md:col-span-1">
+                        <div class="country bg-[rgb(24,24,27)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-5 md:col-span-1 flex flex-col justify-center">
                             <h2 class="font-semibold mb-2">Country</h2>
                             <select class="bg-gray-700 px-3 py-1 rounded w-full">
-                                <option>Canada</option>
+                                <option>
+                                    <span class="pointer-events-none absolute top-0 right-0 flex items-center">Canada</span>     </option>
                                 <option>United States</option>
                                 <option>Mexico</option>
                             </select>
                             <p>We currently only ship to North America.</p>
                         </div>
                         <div class="form bg-[rgb(24,24,27)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-6 md:col-span-1">
+                            <div class="w-[80%] m-auto p-4">
                             
-                            <h2 class="text-2xl font-bold mb-6">Sign in</h2>
+                            <h2 class="text-xl font-semibold mb-6">Sign in</h2>
                             <form>
                                 <div class="mb-4">
                                     <label for="username" class="block mb-2">Username</label>
@@ -213,7 +215,9 @@
                                 </div>
                                 <div class="flex justify-between items-center mb-6">
                                     <label class="flex items-center">
-                                        <input type="checkbox" class="mr-2">
+                                        <span class="material-symbols-outlined mr-2">
+                                            toggle_on
+                                            </span>
                                         <span>Remember me</span>
                                     </label>
                                     <a href="#" class="text-white hover:underline">Forgot password?</a>
@@ -223,14 +227,15 @@
                         
                         
                         </form>
-                        <p class="mt-4 text-center text-gray-400">
+                        <p class="mt-4 text-gray-400">
                             Don't have an account? <a href="#" class="text-white font-bold hover:underline">Sign up</a>
                         </p>
+                    </div>
                         </div>
                         <div class="orders w-full min-w-0 bg-[rgb(24,24,27)] rounded-lg p-4 text-white  sm:col-span-2 xl:col-span-9"> 
                             <div class="w-full min-w-0">
                             <h2 class="font-semibold mb-2 text-zinc-500 dark:text-white">Rececnt Orders</h2>
-                            <div class="inline-block align-middle min-w-ful">
+                            <div class="inline-block align-middle min-w-ful w-full">
                         <table class="min-w-full text-left text-zinc-950 dark:text-white">
                             <thead class="text-zinc-500">
                          <tr>
@@ -410,15 +415,15 @@
                                     <span class="relative block w-full">
                                 
                                 
-                                        <input aria-label="Invite link" readonly class="w-full appearance-none rounded-lg p-2 text-gray-950 dark:text-white border border-gray-700 bg-gray-800 focus:outline-none" value="https://example.com/teams/invite/eHGJEj12FHDKSi">
+                                        <input aria-label="Invite link" readonly class="w-full appearance-none rounded-lg p-2 text-gray-950 dark:text-white border border-gray-700 bg-[hsl(240deg,4%,14.71%)] focus:outline-none" value="https://example.com/teams/invite/eHGJEj12FHDKSi">
                                     </span>
-                                    <button class="inline-flex items-center justify-center px-4 py-2 rounded-lg border text-base font-semibold  dark:text-white border-gray-700 bg-gray-700 bg-gary-900 hover:bg-gray-800 text-gray-200 transition duration-300">
+                                    <button class="inline-flex items-center justify-center rounded-lg text-base border text base dark:text-white bg-gary-900 hover:bg-gray-800 text-gray-200 font-medium w-[23%] px-[7px] py-[2px] transition duration-300">
                                         Copy link
                                     </button>
                                 </div>
                                 
                                 <!-- Reset link button -->
-                                <div class="mt-3">
+                                <div class="mt-3 mb-[49px]">
                                     <button type="button" class="text-base font-medium text-gray-400 hover:text-gray-300 dark:text-white">Reset your invite link</button>
                                 </div>
                                 <!-- User 1 -->
@@ -431,7 +436,7 @@
         <p class="text-sm font-medium text-gray-50 dark:text-white">leslie.alexander@example.com</p>
     </div>
     <!-- Role dropdown -->
-    <select class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
+    <select class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-[rgb(36,36,39)] dark:bg-[rgb(36,36,39)] dark:border-gray-700 dark:text-white">
         <option>Admin</option>
         <option>Owner</option>
         <option>Member</option>
@@ -445,7 +450,7 @@
         <img class="size-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt=""></span>
         <p class="text-sm font-medium text-gray-50 dark:text-white">michael.foster@example.com</p>
     </div>
-    <select class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
+    <select class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-[rgb(36,36,39)] dark:bg-[rgb(36,36,39)] dark:border-gray-700 dark:text-white">
         <option>Admin</option>
         <option>Owner</option>
         <option>Member</option>
@@ -459,7 +464,7 @@
         <img class="size-full" src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt=""></span>
         <p class="text-sm font-medium text-gray-50 dark:text-white">dries.vincent@example.com</p>
     </div>
-    <select class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
+    <select class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-[rgb(36,36,39)] dark:bg-[rgb(36,36,39)] dark:border-gray-700 dark:text-white">
         <option>Admin</option>
         <option>Owner</option>
         <option>Member</option>
@@ -470,7 +475,7 @@
                         </div>
                         
                         <div class="attendance bg-[rgb(24,24,27)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-6 md:col-span-1">
-                            <div class="grid h-full w-full justify-self-center overflow-hidden place-items-start justify-items-center p-6 py-8 sm:p-8 lg:p-12">
+                            <div class="grid h-full w-full justify-self-center overflow-hidden place-items-start  mb-12 p-6 py-8 sm:p-8 lg:p-12">
                                 <!-- Heading -->
                                 <h2 class="font-semibold mb-2 text-lg text-gray-50 sm:text-base dark:text-white">Attendance</h2>
                         
@@ -484,11 +489,12 @@
                                     <p class="ml-7 text-sm text-gray-400">Tickets will be available to the general public.</p>
                         
                                     <!-- In-Person Checkbox -->
-                                    <div class="flex items-center">
+                                     <div class="pl-7 mb-[40px] mt-[31px]">
+                                    <div class="flex items-center mt-4">
                                         <input id="in-person" name="attendance-type" type="checkbox" class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                         <label for="in-person" class="ml-3 block text-sm font-medium text-white">In-person</label>
                                     </div>
-                                    <p class="ml-7 text-sm text-gray-400">Attendees will be at the event in person.</p>
+                                    <p class="ml-7 text-sm text-gray-400 mb-5 mt-1">Attendees will be at the event in person.</p>
                         
                                     <!-- Online Checkbox -->
                                     <div class="flex items-center">
@@ -496,6 +502,7 @@
                                         <label for="online" class="ml-3 block text-sm font-medium text-white">Online</label>
                                     </div>
                                     <p class="ml-7 text-sm text-gray-400">Attendees will only be able to view the event online.</p>
+                                </div>
                         
                                     <!-- Private Radio Button -->
                                     <div class="flex items-center">

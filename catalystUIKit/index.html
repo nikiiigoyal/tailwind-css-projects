@@ -7,6 +7,7 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Catalyst Ui Kit</title>
@@ -89,135 +90,11 @@
                     <div
                         class="main-body relative grid gap-[17px] sm:grid-cols-2 xl:grid-cols-[repeat(15,_minmax(0,1fr))]">
                         <!-- This setup creates a grid layout with a custom gap of 17px between items. On small screens, the grid will have 2 columns, but on extra-large screens, it will have 15 columns. The relative position allows further control over the element's positioning if needed.
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[9px] left-0 right-0 row-start-2 ml-[calc(50%-50vw)] h-px w-screen" fill="none">
-                            <defs>
-                                <pattern id=":S1:" patternUnits="userSpaceOnUse" width="16" height="1">
-                            <line class="stroke-zinc-950 dark:stroke-white" x1="0" x2="16" y1="0.5" y2="0.5" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line></pattern></defs><rect width="100%" height="100%" fill="url(#:S1:)">
-
-                        </rect>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[9px] left-0 right-0 row-start-3 ml-[calc(50%-50vw)] h-px w-screen" fill="none">
-                            <defs>
-                                <pattern id=":S2:" patternUnits="userSpaceOnUse" width="16" height="1">
-                                    <line class="stroke-zinc-950 dark:stroke-white" x1="0" x2="16" y1="0.5" y2="0.5" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                                </pattern>
-                            </defs>
-                            <rect width="100%" height="100%" fill="url(#:S2:)"></rect>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[9px] left-0 right-0 row-start-4 ml-[calc(50%-50vw)] h-px w-screen xl:top-2" fill="none">
-                            <defs>
-                                <pattern id=":S3:" patternUnits="userSpaceOnUse" width="16" height="1">
-                                    <line class="stroke-zinc-950 dark:stroke-white" x1="0" x2="16" y1="0.5" y2="0.5" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                                </pattern>
-                            </defs>
-                            <rect width="100%" height="100%" fill="url(#:S3:)"></rect>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[9px] left-0 right-0 row-start-5 ml-[calc(50%-50vw)] h-px w-screen xl:hidden" fill="none">
-                            <defs>
-                                <pattern id=":S4:" patternUnits="userSpaceOnUse" width="16" height="1">
-                                    <line class="stroke-zinc-950 dark:stroke-white" x1="0" x2="16" y1="0.5" y2="0.5" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                                </pattern>
-                            </defs>
-                            <rect width="100%" height="100%" fill="url(#:S4:)"></rect>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[9px] left-0 right-0 row-start-6 ml-[calc(50%-50vw)] h-px w-screen md:top-2 xl:hidden" fill="none">
-                            <defs>
-                            <pattern id=":S5:" patternUnits="userSpaceOnUse" width="16" height="1">
-                                <line class="stroke-zinc-950 dark:stroke-white" x1="0" x2="16" y1="0.5" y2="0.5" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                        </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#:S5:)"></rect>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[9px] left-0 right-0 row-start-6 ml-[calc(50%-50vw)] h-px w-screen md:top-2 xl:hidden" fill="none">
-                            <defs>
-                                <pattern id=":S5:" patternUnits="userSpaceOnUse" width="16" height="1">
-                                    <line class="stroke-zinc-950 dark:stroke-white" x1="0" x2="16" y1="0.5" y2="0.5" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line></pattern></defs><rect width="100%" height="100%" fill="url(#:S5:)">
-
-                        </rect>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -top-[9px] left-0 right-0 row-start-7 ml-[calc(50%-50vw)] h-px w-screen sm:top-2 md:hidden" fill="none">
-                            <defs>
-                                <pattern id=":S6:" patternUnits="userSpaceOnUse" width="16" height="1">
-                                    <line class="stroke-zinc-950 dark:stroke-white" x1="0" x2="16" y1="0.5" y2="0.5" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                                </pattern>
-                            </defs>
-                            <rect width="100%" height="100%" fill="url(#:S6:)">
-
-                            </rect>
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute left-0 right-0 top-2 row-start-8 ml-[calc(50%-50vw)] h-px w-screen sm:hidden" fill="none">
-                            <defs>
-                                <pattern id=":S7:" patternUnits="userSpaceOnUse" width="16" height="1"><line class="stroke-zinc-950 dark:stroke-white" x1="0" x2="16" y1="0.5" y2="0.5" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
                         
-                        </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#:S7:)">
-
-                        </rect>
-                    </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -left-[9px] top-[-88px] col-start-1 h-[calc(100%+88px+160px)] w-px" fill="none">
-                            <defs>
-                                <pattern id=":S8:" patternUnits="userSpaceOnUse" width="1" height="16">
-                            <line class="stroke-zinc-950 dark:stroke-white" x1="0.5" x2="0.5" y1="0" y2="16" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                        </pattern>
-                    </defs>
-                            <rect width="100%" height="100%" fill="url(#:S8:)">
-
-                        </rect>
-                    </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -left-[9px] top-[-88px] hidden h-[calc(100%+88px+160px)] w-px sm:col-start-2 sm:block xl:col-start-6" fill="none">
-                            <defs>
-                                <pattern id=":S9:" patternUnits="userSpaceOnUse" width="1" height="16">
-                            <line class="stroke-zinc-950 dark:stroke-white" x1="0.5" x2="0.5" y1="0" y2="16" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                        </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#:S9:)">
-
-                        </rect>
-                    </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -left-[9px] top-[-88px] col-start-7 hidden h-[calc(100%+88px+160px)] w-px xl:block" fill="none">
-                            <defs>
-                                <pattern id=":Sa:" patternUnits="userSpaceOnUse" width="1" height="16">
-                                    <line class="stroke-zinc-950 dark:stroke-white" x1="0.5" x2="0.5" y1="0" y2="16" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line></pattern></defs><rect width="100%" height="100%" fill="url(#:Sa:)">
-
-                        </rect>
-                    </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -left-[9px] top-[-88px] col-start-10 hidden h-[calc(100%+88px+160px)] w-px xl:block" fill="none">
-                            <defs>
-                            <pattern id=":Sb:" patternUnits="userSpaceOnUse" width="1" height="16">
-                            <line class="stroke-zinc-950 dark:stroke-white" x1="0.5" x2="0.5" y1="0" y2="16" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                        </pattern>
-                        </defs>
-                            <rect width="100%" height="100%" fill="url(#:Sb:)">
-
-                        </rect>
-                    </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="
-                        
-                        absolute -left-[9px] top-[-88px] col-start-11 hidden h-[calc(100%+88px+160px)] w-px xl:block" fill="none">
-                            <defs>
-                                <pattern id=":Sc:" patternUnits="userSpaceOnUse" width="1" height="16">
-                            <line class="stroke-zinc-950 dark:stroke-white" x1="0.5" x2="0.5" y1="0" y2="16" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                        </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#:Sc:)">
-
-                    </rect>
-                </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="absolute -right-2 top-[-88px] col-start-3 h-[calc(100%+88px+160px)] w-px translate-x-1/2 sm:col-start-4 xl:col-start-[16]" fill="none">
-                            <defs>
-                                <pattern id=":Sd:" patternUnits="userSpaceOnUse" width="1" height="16">
-                                    <line class="stroke-zinc-950 dark:stroke-white" x1="0.5" x2="0.5" y1="0" y2="16" stroke-dasharray="2 2" stroke-width="1.5" stroke-opacity="0.1" stroke-linejoin="round"></line>
-                        </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#:Sd:)">
-
-                        </rect>
-                    </svg> -->
-                        <!-- <div class=" gap-4 p-4 max-w-7xl mx-auto bg-gray-900"> -->
+                         <div class=" gap-4 p-4 max-w-7xl mx-auto bg-gray-900"> -->
                         <div
                             class="button xl:col-span-5 rounded-lg p-4 text-white h-full w-full flex justify-center space-x-2 items-center  dark:bg-[rgb(24,24,27)]  
-   shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-red-500">
+   shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49)]">
                             <div>
                                 <button
                                     class="relative bg-[rgb(24,24,27)] hover:bg-gray-700 font-medium px-4 py-2 rounded-lg transition duration-300 text-white dark:bg-gray-700 dark:border-bg-gray-600 dark:hover:bg-gray-500 focus:outline-none">
@@ -229,69 +106,70 @@
                             </div>
                         </div>
                         <div
-                            class="opendialog xl:col-span-5  rounded-lg p-4 text-white h-32 flex justify-center items-center dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49)">
+                            class="opendialog xl:col-span-5 rounded-lg p-4 text-white h-32 flex justify-center items-center dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49)]">
                             <div>
 
 
 
                                 <button
-                                    class="hover:bg-gray-700 bg-gray-600 text-gray-200 font-medium px-4 py-2 rounded transition duration-300">open
-                                    Dialoge</button>
+                                    class="relative bg-[rgb(24,24,27)] hover:bg-gray-700 font-medium px-3 py-2 rounded-lg transition duration-300 text-white dark:bg-gray-700 dark:border-bg-gray-600 dark:hover:bg-gray-500 focus:outline-none">Open
+                                    dialog</button>
                             </div>
                         </div>
                         <div
-                            class="country dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49) rounded-lg p-4 text-white sm:col-span-2 xl:col-span-5 md:col-span-1 flex flex-col justify-center">
-                            <h2 class="font-semibold mb-2">Country</h2>
-                            <select class="bg-gray-700 px-3 py-1 rounded w-full">
+                            class="country dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-5 md:col-span-1 flex flex-col justify-center">
+                            <h2 class="font-semibold mb-2 text-[rgb(9,9,11)] dark:text-white">Country</h2>
+                            <select class="dark:bg-gray-700 px-3 py-1 rounded w-full border-[rgb(9,9,11)] text-[rgb(9,9,11)] dark:text-white focus:outline-none mb-[10px]">
                                 <option>
                                     Canada</option>
                                 <option>United States</option>
                                 <option>Mexico</option>
                             </select>
-                            <p>We currently only ship to North America.</p>
+                            <p class="text-gray-500 mt-[5px]">We currently only ship to North America.</p>
                         </div>
                         <div
-                            class="form dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49) rounded-lg p-4 text-white sm:col-span-2 xl:col-span-6 md:col-span-1">
+                            class="form dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-6 md:col-span-1">
                             <div class="w-[80%] m-auto p-4">
 
-                                <h2 class="text-xl font-semibold mb-6">Sign in</h2>
+                                <h2 class="text-xl font-semibold mb-6 text-[rgb(9,9,11)] dark:text-white">Sign in</h2>
                                 <form>
                                     <div class="mb-4">
-                                        <label for="username" class="block mb-2">Username</label>
+                                        <label for="username" class="block mb-2 text-[rgb(9,9,11)] dark:text-white">Username</label>
                                         <input type="text" id="username"
-                                            class="w-full bg-[rgb(36,36,39)]  px-3 py-2 rounded-lg placeholder:text-zinc-500 focus:outline-none text-white border border-zinc-950/10">
+                                            class="block w-full appearance-none dark:bg-[rgb(36,36,39)] px-3 py-2 rounded-lg placeholder:text-zinc-500 focus:outline-none text-[rgb(9,9,11)]  dark:text-white border border-zinc-950/10">
                                     </div>
                                     <div class="mb-4">
-                                        <label for="password" class="block mb-2">Password</label>
+                                        <label for="password" class="block mb-2 text-[rgb(9,9,11)] dark:text-white">Password</label>
                                         <input type="password" id="password"
-                                            class="w-full bg-[rgb(36,36,39)]  px-3 py-2 rounded-lg placeholder:text-zinc-500 focus:outline-none text-white border border-zinc-950/10">
+                                            class="block w-full appearance-none dark:bg-[rgb(36,36,39)] px-3 py-2 rounded-lg placeholder:text-zinc-500 focus:outline-none text-[rgb(9,9,11)]  dark:text-white border border-zinc-950/10">
                                     </div>
                                     <div class="flex justify-between items-center mb-6">
                                         <label class="flex items-center">
                                             <span class="material-symbols-outlined mr-2">
                                                 toggle_on
                                             </span>
-                                            <span>Remember me</span>
+                                            <span class="text-[rgb(9,9,11)] dark:text-white">Remember me</span>
                                         </label>
-                                        <a href="#" class="text-white hover:underline">Forgot password?</a>
+                                        <a href="#" class="dark:text-white hover:underline text-[rgb(9,9,11)]">Forgot password?</a>
                                     </div>
                                     <button type="submit"
-                                        class="hover:bg-gray-700 bg-gray-600 w-full text-gray-200  px-4 py-2 rounded transition duration-300 font-bold">Get
+                                        class="relative w-full bg-[rgb(24,24,27)] hover:bg-gray-700 font-medium px-3 py-2 rounded-lg transition duration-300 text-white dark:bg-gray-700 dark:border-bg-gray-600 dark:hover:bg-gray-500 focus:outline-none">Get
                                         started</button>
 
 
 
                                 </form>
                                 <p class="mt-4 text-gray-400">
-                                    Don't have an account? <a href="#" class="text-white font-bold hover:underline">Sign
+                                    Don't have an account? <a href="#" class="dark:text-white font-bold text-[rgb(9,9,11)]
+                                    hover:underline ">Sign
                                         up</a>
                                 </p>
                             </div>
                         </div>
                         <div
-                            class="orders w-full min-w-0 dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49) rounded-lg p-4 text-white  sm:col-span-2 xl:col-span-9">
+                            class="orders w-full min-w-0 dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49)] rounded-lg p-4 text-white  sm:col-span-2 xl:col-span-9">
                             <div class="w-full min-w-0">
-                                <h2 class="font-semibold mb-2 text-zinc-500 dark:text-white">Rececnt Orders</h2>
+                                <h2 class="font-semibold mb-2  text-[rgb(9,9,11)] dark:text-white">Rececnt Orders</h2>
                                 <div class="inline-block align-middle min-w-ful w-full">
                                     <table class="min-w-full text-left text-zinc-950 dark:text-white">
                                         <thead class="text-zinc-500">
@@ -535,10 +413,10 @@
                             </div>
                         </div>
                         <div
-                            class="members dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49) rounded-lg p-6 text-white md:row-span-2 sm:col-span-2 xl:col-span-9 w-full h-full justify-items-center overflow-hidden place-items-start py-8">
+                            class="members dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49)] rounded-lg p-6 text-white md:row-span-2 sm:col-span-2 xl:col-span-9 w-full h-full justify-items-center overflow-hidden place-items-start py-8">
                             <div class="w-full min-w-0">
                                 <!-- Title -->
-                                <h2 class="font-semibold mb-2 text-lg text-gray-50 sm:text-base">Team Members</h2>
+                                <h2 class="font-semibold mb-2 text-lg sm:text-base text-[rgb(9,9,11)] dark:text-white">Team Members</h2>
 
                                 <!-- Instruction text -->
                                 <p class="mt-8 text-base text-gray-400 sm:text-sm">Share this link with your team to
@@ -550,11 +428,11 @@
 
 
                                         <input aria-label="Invite link" readonly
-                                            class="w-full appearance-none rounded-lg p-2 text-gray-950 dark:text-white border border-gray-700 bg-[hsl(240deg,4%,14.71%)] focus:outline-none"
+                                            class="w-full appearance-none rounded-lg p-2 border border-[rgba(9,9,11,0.1)] text-gray-950 bg-white dark:text-white dark:border-gray-700 dark:bg-[hsl(240deg,4%,14.71%)] focus:outline-none"
                                             value="https://example.com/teams/invite/eHGJEj12FHDKSi">
                                     </span>
                                     <button
-                                        class="inline-flex items-center justify-center rounded-lg text-base border text base dark:text-white bg-gary-900 hover:bg-gray-800 text-gray-200 font-medium w-[23%] px-[7px] py-[2px] transition duration-300">
+                                        class="inline-flex items-center justify-center rounded-lg text-base border border-[rgba(9,9,11,0.1)] bg-white text base dark:text-black  text-black dark:bg-gary-900 hover:bg-gray-800  font-medium w-[25%] px-[7px] py-[2px] transition duration-300">
                                         Copy link
                                     </button>
                                 </div>
@@ -562,7 +440,7 @@
                                 <!-- Reset link button -->
                                 <div class="mt-3 mb-[49px]">
                                     <button type="button"
-                                        class="text-base font-medium text-gray-400 hover:text-gray-300 dark:text-white">Reset
+                                        class="text-base font-medium text-gray-400 hover:text-gray-300 dark:text-white text-rgb(9,9,11)">Reset
                                         your invite link</button>
                                 </div>
                                 <!-- User 1 -->
@@ -575,12 +453,12 @@
                                                 src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
                                                 alt=""></span>
                                         <!-- User email -->
-                                        <p class="text-sm font-medium text-gray-50 dark:text-white">
+                                        <p class="text-sm font-medium text-[rgb(9,9,11)] dark:text-white">
                                             leslie.alexander@example.com</p>
                                     </div>
                                     <!-- Role dropdown -->
                                     <select
-                                        class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-[rgb(36,36,39)] dark:bg-[rgb(36,36,39)] dark:border-gray-700 dark:text-white">
+                                        class="block w-24 py-2 px-3 text-sm rounded-lg  dark:bg-[rgb(36,36,39)] dark:border-gray-700 border-[rgba(9,9,11,0.1)] bg-white text base dark:text-white text-[rgb(9,9,11)] dark:bg-gary-900">
                                         <option>Admin</option>
                                         <option>Owner</option>
                                         <option>Member</option>
@@ -595,11 +473,11 @@
                                             <img class="size-full"
                                                 src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
                                                 alt=""></span>
-                                        <p class="text-sm font-medium text-gray-50 dark:text-white">
+                                        <p class="text-sm font-medium text-[rgb(9,9,11)]  dark:text-white">
                                             michael.foster@example.com</p>
                                     </div>
                                     <select
-                                        class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-[rgb(36,36,39)] dark:bg-[rgb(36,36,39)] dark:border-gray-700 dark:text-white">
+                                        class="block w-24 py-2 px-3 text-sm rounded-lg dark:bg-[rgb(36,36,39)] dark:border-gray-700 border-[rgba(9,9,11,0.1)] bg-white text base dark:text-white text-[rgb(9,9,11)] dark:bg-gary-900">
                                         <option>Admin</option>
                                         <option>Owner</option>
                                         <option>Member</option>
@@ -614,11 +492,11 @@
                                             <img class="size-full"
                                                 src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80"
                                                 alt=""></span>
-                                        <p class="text-sm font-medium text-gray-50 dark:text-white">
+                                        <p class="text-sm font-medium text-[rgb(9,9,11)]  dark:text-white">
                                             dries.vincent@example.com</p>
                                     </div>
                                     <select
-                                        class="block w-24 py-2 px-3 text-sm rounded-lg text-gray-900 border-gray-300 bg-[rgb(36,36,39)] dark:bg-[rgb(36,36,39)] dark:border-gray-700 dark:text-white">
+                                        class="block w-24 py-2 px-3 text-sm rounded-lg  dark:bg-[rgb(36,36,39)] dark:border-gray-700 border-[rgba(9,9,11,0.1)] bg-white text base dark:text-white text-[rgb(9,9,11)] dark:bg-gary-900">
                                         <option>Admin</option>
                                         <option>Owner</option>
                                         <option>Member</option>
@@ -629,11 +507,11 @@
                         </div>
 
                         <div
-                            class="attendance dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49) rounded-lg p-4 text-white sm:col-span-2 xl:col-span-6 md:col-span-1">
+                            class="attendance dark:bg-[rgb(24,24,27)] dark:text-dark-text shadow-[0px_0px_0px_1px_rgba(9,9,11,0,0.07),0px_2px_2px_0px_rgba(9,9,11,0.05)] border border-[rgb(223,223,224)] dark:border-[rgb(47,47,49)] rounded-lg p-4 text-white sm:col-span-2 xl:col-span-6 md:col-span-1">
                             <div
                                 class="grid h-full w-full justify-self-center overflow-hidden place-items-start  mb-12 p-6 py-8 sm:p-8 lg:p-12">
                                 <!-- Heading -->
-                                <h2 class="font-semibold mb-2 text-lg text-gray-50 sm:text-base dark:text-white">
+                                <h2 class="font-semibold mb-2 text-lg text-[rgb(9,9,11)] sm:text-base dark:text-white">
                                     Attendance</h2>
 
                                 <!-- Radio and Checkbox Group -->
@@ -643,7 +521,7 @@
                                         <input id="public" name="attendance" type="radio"
                                             class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                         <label for="public"
-                                            class="ml-3 block text-sm font-medium text-white">Public</label>
+                                            class="ml-3 block text-sm font-medium text-[rgb(9,9,11)] dark:text-white">Public</label>
                                     </div>
                                     <p class="ml-7 text-sm text-gray-400">Tickets will be available to the general
                                         public.</p>
@@ -654,7 +532,7 @@
                                             <input id="in-person" name="attendance-type" type="checkbox"
                                                 class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                             <label for="in-person"
-                                                class="ml-3 block text-sm font-medium text-white">In-person</label>
+                                                class="ml-3 block text-sm font-medium text-[rgb(9,9,11)] dark:text-white">In-person</label>
                                         </div>
                                         <p class="ml-7 text-sm text-gray-400 mb-5 mt-1">Attendees will be at the event
                                             in person.</p>
@@ -664,7 +542,7 @@
                                             <input id="online" name="attendance-type" type="checkbox"
                                                 class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                             <label for="online"
-                                                class="ml-3 block text-sm font-medium text-white">Online</label>
+                                                class="ml-3 block text-sm font-medium text-[rgb(9,9,11)] dark:text-white">Online</label>
                                         </div>
                                         <p class="ml-7 text-sm text-gray-400">Attendees will only be able to view the
                                             event online.</p>
@@ -675,7 +553,7 @@
                                         <input id="private" name="attendance" type="radio"
                                             class="h-4 w-4 text-indigo-600 border-gray-300 focus:ring-indigo-500">
                                         <label for="private"
-                                            class="ml-3 block text-sm font-medium text-white">Private</label>
+                                            class="ml-3 block text-sm font-medium text-[rgb(9,9,11)] dark:text-white">Private</label>
                                     </div>
                                     <p class="ml-7 text-sm text-gray-400">Tickets are not available to the general
                                         public.</p>
